@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 function Season(props){
   return(
     <div className="season">
-    <p>{props.name}</p>
-    <p>{props.year}</p>
+    <p className="seasonName">{props.name}</p>
+    <p className="seasonYear">{props.year}</p>
     </div>
   )
 }

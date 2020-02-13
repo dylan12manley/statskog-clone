@@ -1,13 +1,8 @@
 .App {
-
   background-image:
-  linear-gradient(135deg, rgba(2,62,54,0.4) 0%, rgba(2,27,23,0.6) 100%),
-                  url("img/img-noise.png");
-  /* linear-gradient(135deg, rgba(2,71,57,1) 0%, rgba(0,38,33,1) 100%),
-  url("img/img-noise.png"); */
-  /* background: rgb(2,71,57); */
-  /* background: linear-gradient(135deg, rgba(2,71,57,1) 0%, rgba(0,38,33,1) 100%); */
-  /* background=#024f39ff&noise=626262&density=39&opacity=28 */
+    linear-gradient(135deg, rgba(2,62,54,0.4) 0%, rgba(0,0,0,0.4) 100%),
+    url("img/img-noise.png");
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .Map-img {
@@ -17,30 +12,36 @@
   display: inline-block;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 200s linear;
-  }
-} */
-
-.seasons {
-  position: relative;
-  display: inline-block;
-}
 .background {
-
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url("img/norway-map.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 80vh;
 }
 
+.seasons {
+  text-align: center;
+  width: 200px;
+  border-right: 1px solid #118878;
+}
+
+p {
+  margin: 0px;
+}
+
+.seasonName {
+  font-variant: small-caps;
+  font-size: 18px;
+}
+.seasonYear {
+  padding-bottom: 25px;
+}
 .App-link {
   color: #61dafb;
 }
